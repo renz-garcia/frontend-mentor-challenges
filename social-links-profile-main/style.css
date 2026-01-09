@@ -1,0 +1,119 @@
+:root {
+  --green-color: hsl(75, 94%, 57%);
+  --white-color: hsl(0, 0%, 100%);
+  --grey-700-color: hsl(0, 0%, 20%);
+  --grey-800-color: hsl(0, 0%, 12%);
+  --grey-900-color: hsl(0, 0%, 8%);
+  --paragraph-font-size: 14px;
+  --font-family: "Inter", sans-serif;
+  --weight-400: 400;
+  --weight-600: 600;
+  --weight-700: 700;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--grey-900-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  height: 100vh;
+}
+
+.container {
+  width: 327px;
+  background: var(--grey-800-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 24px;
+  gap: 24px;
+  text-align: center;
+}
+
+.user-info-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-profile {
+  width: 86px;
+  height: 86px;
+  border-radius: 100%;
+  display: block;
+}
+
+.user-name {
+  color: var(--white-color);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.user-location {
+  color: var(--green-color);
+  font-size: var(--paragraph-font-size);
+  font-weight: 600;
+}
+
+.user-description {
+  color: var(--white-color);
+  font-size: var(--paragraph-font-size);
+  font-weight: 400;
+}
+
+.user-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 8px;
+}
+
+.link-item {
+  background: var(--grey-700-color);
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.link-item a {
+  display: block;
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: var(--paragraph-font-size);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.link-item:hover {
+  background: var(--green-color);
+  cursor: pointer;
+}
+
+.link-item:hover a {
+  color: var(--grey-700-color);
+}
