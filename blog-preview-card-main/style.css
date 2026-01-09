@@ -102,3 +102,9 @@ body {
     font-size: 14px;
     font-weight: 800;
 }
+
+@media (width: 1440px) {
+    .container {
+        width: 384px;
+    }
+}
